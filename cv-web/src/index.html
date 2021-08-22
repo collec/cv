@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1,
+        minimum-scale=1,
+        maximum-scale=1,
+        user-scalable=no,
+        viewport-fit=cover">
+    <title>我的简历</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #eee;
+            margin: 20px 0;
+        }
+        
+        article {
+            width: 21cm;
+            min-height: 29.7cm;
+            background: white;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 1em;
+        }
+    </style>
+    <style media="print">
+        body {
+            margin: 0;
+        }
+        
+        .page2 {
+            page-break-before: always;
+            margin-top: 30px;
+        }
+    </style>
+    <style>
+        body {}
+        
+        p {
+            margin: .3em 0;
+        }
+        
+        h1 {
+            font-size: 25px;
+            margin-top: 0;
+        }
+        
+        h4,
+        h5,
+        h6 {
+            font-weight: normal;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        strong {
+            font-weight: normal;
+            color: #f60;
+        }
+        
+        a {
+            color: #999;
+            text-decoration: none;
+            border-bottom: 1px solid;
+        }
+        
+        p,
+        li {
+            color: #666;
+        }
+        
+        strong {
+            font-weight: normal;
+        }
+        
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+        
+        .bio {
+            position: relative;
+        }
+        
+        .bio img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+
+    <style>
+        .projects {}
+        
+        .projects p {
+            color: #666;
+        }
+        
+        .projects strong {
+            color: #f60;
+        }
+        
+        .projects>ol {
+            margin-top: 0;
+            list-style-position: inside;
+            padding: 0;
+        }
+        
+        .projects>ol>li {
+            margin-bottom: 24px;
+        }
+        
+        .projects>ol>li>header {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .projects>ol>li h3 {
+            display: inline-block;
+        }
+    </style>
+    <style>
+        .skills {}
+        
+        #skills {
+            width: 500px;
+            height: 270px;
+        }
+        
+        @media print {
+            #skills {
+                display: none;
+            }
+        }
+        
+        .skills>.wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .skills>.wrapper>:first-child {
+            margin-right: 24px;
+        }
+        
+        .skills>.wrapper>#skills {}
+        
+        .skills>.wrapper>ul {
+            color: #666;
+        }
+        
+        .skills>.wrapper strong {
+            color: #f60;
+        }
+        
+        .skills>.wrapper>ul>li {
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+    </style>
+    <style>
+        .openSource {}
+        
+        .openSource>h2 {}
+        
+        .openSource header img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        
+        .openSource>ul {}
+        
+        .openSource>ul>li {
+            margin-bottom: 24px;
+        }
+        
+        .openSource header {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .openSource h3 {}
+    </style>
+    <style>
+        .jobs {}
+        
+        .jobs>h2 {}
+        
+        .jobs>ol {}
+        
+        .jobs>ol>li {
+            margin: 12px 0;
+        }
+        
+        .jobs header {
+            display: flex;
+            color: #666;
+            margin-bottom: 12px;
+        }
+        
+        .jobs header>h3 {
+            font-size: 18px;
+            color: #333;
+        }
+        
+        .jobs header>h4 {
+            margin-left: 1em;
+            font-size: 18px;
+        }
+        
+        .jobs header>span {
+            font-size: 18px;
+            margin-left: auto;
+        }
+    </style>
+
+
+
+    <style>
+        @media (max-width: 500px) {
+            body {
+                margin: 0;
+            }
+            article {
+                width: auto;
+                height: auto;
+            }
+            .bio img {
+                display: none;
+            }
+            .skills .wrapper {
+                flex-direction: column;
+            }
+            #skills {
+                width: auto;
+            }
+            .jobs header {
+                flex-direction: column;
+            }
+            .jobs header>h3,
+            .jobs header>h4,
+            .jobs header>span {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <section class="bio">
+            <h1>王凯</h1>
+            <img src="https://pic2.zhimg.com/v2-ac43e187400211590d656d5017304314_xl.jpg" alt="" width="100" height="100">
+            <p>
+                男 | 25岁 | 前端开发工程师 | 常州
+            </p>
+            <p>
+                手机：18963735167 | 微信：c2_leo | 邮箱：354080041@qq.com
+            </p>
+            <p>
+                到岗时间：一月之内 | 薪资：面议
+            </p>
+        </section>
+
+        <section class="projects">
+            <h2>项目经历</h2>
+            <ol>
+                <li>
+                    <header>
+                        <h3>公司基础建设</h3>
+                        <span>
+                            <a href="https://www.czmakj.com/case.html">网页预览</a>
+                        </span>
+                    </header>
+                    <p>
+                        官网：独自负责搭建静态网页，使用了<strong>HTML5</strong> / <strong>css3</strong> / <strong>wow.js</strong> /
+                        <strong>swiper.js</strong>等技术让页面更生动</strong>。
+                    </p>
+                    <p>
+                        UI组件：基于<strong>vue / element-ui</strong>全局调整了UI样式，重写了<strong>弹出框</strong>、<strong>树形选择器</strong>等组件。
+                    </p>
+                    <p>
+                        因为个人投入开发的UI样式和代码规范约定，已在公司前端同事广泛使用，有效提高前端团队的开发效率，减少了维护成本。
+                    </p>
+                    <p>
+                        制作过程让我对代码规范和协同工作的重要性有了更深刻的认知。
+                    </p>
+                </li>
+                <li>
+                    <header>
+                        <h3>微信小程序开发</h3>
+                    </header>
+                    <p>
+                        独立负责公司小程序开发的工作，期间使用了<strong>有赞</strong>
+                        <strong>Vant Weapp</strong>UI组件库
+                    </p>
+                    <p>
+                        帮助公司成功完成交付了两款小程序应用，客户反应良好。
+                    </p>
+                    <p>
+                        开发完毕，让我对小程序开发有了新的认知，扩展了自己的前端知识面。
+                    </p>
+                </li>
+                <li>
+                    <header>
+                        <h3>昆山安全生产监管平台</h3>
+                    </header>
+                    <p>
+                        这是一个基于 <strong>Vue</strong> 技术开发的多页面应用程序,是由多个模块集成的系统管理平台。
+                    </p>
+                    <p>
+                        主要功能包括企业用户登录、企业安全底数管理、双重预防机制、安全生产标准化、安全文件发布等。
+                    </p>
+                    <p>
+                        本人主要参与了上述功能模块的需求研讨和前端编码工作，此外还重写了<strong>Element-Ui</strong>的公共样式,封装了常用组件。
+                    </p>
+                    <p>
+                        该系统搭建起了政企沟通的桥梁，提升了企业与政府的沟通效率，能够有效的监督企业的安全生产环境，降低事故发生率，并且现在已经成功上线交付，收到了昆山市政府的一致好评。
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="skills">
+            <h2>技能</h2>
+            <div class="wrapper">
+                <div id="skills"></div>
+                <ul>
+                    <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> 遵循开发规范</li>
+                    <li>熟悉<strong>前后端分离</strong>技术与<strong>敏捷开发流程</strong>，包括 ajax/axios、跨域、前端路由、浏览器缓存 等</li>
+                    <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+                    <li>熟练掌握 <strong>微信小程序开发</strong>，包括 微信支付、小程序上架一系列流程 等</li>
+                    <li>熟悉 <strong>ES6+语法</strong>，包括 Set / Map / Promise / await / 析构赋值 等</li>
+                    <li>熟悉 <strong>Echarts / HighCharts</strong>技术 可提供可视化数据解决方案，项目中大量使用了Echarts</li>
+                    <li>熟悉 <strong>Egis</strong>地图， 有大屏可视化经验</li>
+                    <li>熟悉 Node.js基本使用，npm包管理器，scss、sass等css预处理器，git代码版本管理工具</li>
+                    <li>了解 Webpack 的配置和优化</li>
+                </ul>
+            </div>
+        </section>
+        <section class="jobs">
+            <h2>工作经历</h2>
+            <ol>
+                <li>
+                    <header>
+                        <h3> 常州鸣昂网络科技有限公司 </h3>
+                        <h4>前端开发工程师（小程序/移动web端）</h4>
+                        <span><time>2019年3月</time>~<time>2020年10月</time></span>
+                    </header>
+                    <ul>
+                        <li>
+                            独立负责公司基础设施建设 <strong>公司官网</strong> 开发和<strong>负责团队基础库开发</strong>
+                        </li>
+                        <li>
+                            负责微信小程序开发、产品自测、文档撰写，确保测试交付相关工作， 维护之前已交付项目,讨论新增需求和相关开发任务
+                        </li>
+                        <li>
+                            负责移动web端开发，基于
+                            <strong>Vue</strong> 框架，使用了
+                            <strong>flexible.js</strong> 移动端自适应方案，利用
+                            <strong>i18n</strong>实现了前端国际化。
+                        </li>
+                        <li>
+                            负责开发公司项目后台管理系统（Vue+Element）
+                        </li>
+                        <li>
+                            微信小程序有上线产品-<strong>佳爷房谈</strong> <strong>讯瑶财税</strong>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <header>
+                        <h3>北京华胜天成科技股份有限公司-常州应急事业部</h3>
+                        <h4>前端工程师</h4>
+                        <span><time>2020年10月</time>~<time>至今</time></span>
+                    </header>
+                    <ul>
+                        <li>负责应急事业部昆山互联网+监管平台（企业端和政府端）系统开发</li>
+                        <li>独自开发昆山经济开发区大数据分析与应用平台</li>
+                        <li>负责安全生产模块的数据可视化开发（使用了可视化库<strong>Echarts</strong>， 地图服务
+                            <strong>Egis</strong>）</li>
+                        <li>组织参与了多次内部技术分享，<strong>ES6+ 新特性</strong>、
+                            <strong>约定代码统一规范</strong> 有效减少bug修复时间
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <!-- 
+        <section class="others">
+            <h2>其他链接</h2>
+            <ul>
+                <li><a href="#">我的博客</a>，</li>
+                <li><a href="#">我的 GitHub</a>，</li>
+            </ul>
+        </section>
+         -->
+
+        <section class="education">
+            <h2>教育经历</h2>
+            <p>
+                <span><time>2015年</time>~<time>2017年</time></span> 常州信息职业技术学院 软件技术</p>
+            <p>
+                <span><time>2015年</time>~<time>2019年</time></span> 常州大学 计算机科学与技术 本科</p>
+        </section>
+
+    </article>
+    <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+    <script>
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('skills'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            tooltip: {},
+            radar: {
+                // shape: 'circle',
+                name: {
+                    textStyle: {
+                        color: '#fff',
+                        backgroundColor: '#999',
+                        borderRadius: 3,
+                        padding: [3, 5]
+                    }
+                },
+                indicator: [{
+                    name: '静态页面',
+                    max: 100
+                }, {
+                    name: '编程基础',
+                    max: 100
+                }, {
+                    name: 'Vue',
+                    max: 100
+                }, {
+                    name: '微信小程序',
+                    max: 100
+                }, {
+                    name: '项目开发',
+                    max: 100
+                }, {
+                    name: '沟通能力',
+                    max: 100
+                }]
+            },
+            series: [{
+                name: '基础能力（Budget vs spending）',
+                type: 'radar',
+                // areaStyle: {normal: {}},
+                data: [{
+                    value: [100, 70, 90, 80, 85, 70],
+                    name: '能力雷达'
+                }]
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>
